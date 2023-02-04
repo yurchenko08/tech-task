@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+		<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Viga' rel='stylesheet'>
+        <link rel="stylesheet" href="./styles/icons-font.css">
+        <link rel="stylesheet" href="./styles/style.min.css">
+		
+  </head>
+
+  <body>
+    <div id="main">
+      <div class="glide slides">
+        <div class="glide__track" data-glide-el="track">
+          <ol class="glide__slides wrapper">
+            <li class="glide__slide">
+              <div class="slide1">
+                <div class="slide-content">
+                  <p class="caption">OUR VISION</p>
+                  <h1>DESIGN</h1>
+                  <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                  <i class="icon-ellipse"><p class="footer">Take A Look</p></i>
+                  
+                </div>
+              </div>
+            </li>
+            <li class=" glide__slide">
+              <div class="slide2">
+                <div class="slide-content">
+                  <p class="caption">OUR VISION</p>
+                  <h1>MOTION</h1>
+                  <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+                  <i class="icon-ellipse"><p class="footer">Take A Look</p></i>
+                </div>
+              </div>
+            </li>
+            <li class=" glide__slide">
+           <div class="slide3">
+            <div class="slide-content"> 
+              <p class="caption">OUR VISION</p>
+              <h1>ENGINE</h1>
+              <p class="text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+              <i class="icon-ellipse"><p class="footer">Take A Look</p></i></div>
+           </div>
+            </li>
+          </ol>
+        </div>
+            <div class="arrows-box">
+                <div class="glide__arrows" data-glide-el="controls">
+                  <a class="glide__arrow glide__arrow--left arrows icon-left" data-glide-dir="<">
+                  </a>
+                  <a class="glide__arrow glide__arrow--right arrows icon-right" data-glide-dir=">">
+                  </a>
+                </div>
+              </div>
+      </div>
+      <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+      <script>
+        const options = {
+  type: 'slide',
+  animationDuration: 1000,
+  autoplay: 0,
+  focusAt: '0',
+  startAt: 0,
+  perView: 1,
+  peek: {
+    before: 0,
+    after: 0,
+  },
+};
+        new Glide('.glide',options).mount()
+      </script>
+
+</body>
+</html>
